@@ -279,22 +279,83 @@ body {
 
 /* line 162, ../scss/main.scss */
 #about-us {
+  *zoom: 1;
   width: 100%;
   text-align: center;
   padding: 120px 0 0 0;
 }
-/* line 166, ../scss/main.scss */
+/* line 38, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+#about-us:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 167, ../scss/main.scss */
 #about-us h2 {
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* line 172, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 #about-us p {
   font: "Droid Serif", serif;
   font-size: 1.6rem;
   font-style: italic;
   color: #737373;
   margin-bottom: 70px;
+}
+/* line 180, ../scss/main.scss */
+#about-us .memorable-events {
+  clear: both;
+  width: 70%;
+  text-align: right;
+  margin-bottom: 90px;
+  position: relative;
+}
+/* line 186, ../scss/main.scss */
+#about-us .memorable-events:after {
+  height: 88px;
+  content: "";
+  border-right: 3px solid #f1f1f1;
+  position: absolute;
+  top: 182px;
+  right: 32%;
+  z-index: 0;
+}
+/* line 195, ../scss/main.scss */
+#about-us .memorable-events .text-wrapper {
+  float: left;
+  width: 50%;
+  margin-right: 40px;
+}
+/* line 200, ../scss/main.scss */
+#about-us .memorable-events h3 {
+  font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 204, ../scss/main.scss */
+#about-us .memorable-events h4 {
+  font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+/* line 208, ../scss/main.scss */
+#about-us .memorable-events p {
+  font: normal 1.4rem "Roboto Slab", serif;
+  color: #777;
+  line-height: 1.6;
+  padding-left: 35px;
+}
+/* line 214, ../scss/main.scss */
+#about-us .memorable-events img {
+  float: left;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border: 10px solid #f1f1f1;
+  object-fit: cover;
+  margin-top: 5px;
+  z-index: 1;
 }

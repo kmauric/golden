@@ -160,6 +160,7 @@ body {
 	} //end li
 } //end #portfolio
 #about-us {
+	@include pie-clearfix;
 	width: 100%;
 	text-align: center;
 	padding: 120px 0 0 0;
@@ -168,12 +169,57 @@ body {
 		color: $lightblack;
 		text-transform: uppercase;
 		margin-bottom: 20px;
-	}
+	} //end h2
 	p {
 		font: $font-droid;
 		font-size: 1.6rem;
 		font-style: italic;
 		color: $lightgray;
 		margin-bottom: 70px;
+	} //end p
+	.memorable-events {
+		clear: both;
+		width: 70%;
+		text-align: right;
+		margin-bottom: 90px;
+		position: relative;
+			&:after {
+				height: 88px;
+				content: "";
+				border-right: 3px solid $image-border;
+				position: absolute;
+				top: 182px;
+				right: 32%;
+				z-index: 0;
+			}
+		.text-wrapper {
+			@include float-left;
+			width: 50%;
+			margin-right: 40px;
+		} //end .text-wrapper
+		h3 {
+			font: bold 1.8rem $font-mont;
+			text-transform: uppercase;
+		}
+		h4 {
+			font: bold 1.8rem $font-mont;
+			margin-bottom: 20px;
+		}
+		p {
+			font: normal 1.4rem $font-roboto;
+			color: $gray;
+			line-height: 1.6;
+			padding-left: 35px;
+		}
+		img {
+			@include float-left;
+			@include border-radius(50%);
+			width: 180px;
+			height: 180px;
+			border: 10px solid $image-border;
+			object-fit: cover;
+			margin-top: 5px;
+			z-index: 1;
+		}
 	}
 }
