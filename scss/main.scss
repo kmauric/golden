@@ -1,0 +1,179 @@
+@import 'compass';
+@import 'compass/reset';
+@import 'variables';
+@import 'mixins';
+@import 'breakpoint';
+
+*, *::before, *::after { @include box-sizing; }
+html { font-size: 62.5%; }
+body {
+	font-family: $font-roboto;
+	font-size: 1rem;
+	background: $white;
+}
+.container { 
+	max-width: 1200px;
+	padding: 0 5%;
+	margin: 0 auto;  
+} //end container
+
+#main-header {
+	width: 100%;
+	background: url("../img/header_bg.jpg") no-repeat center center;
+	text-align: center;
+	padding: 40px 0 0 0;
+	@include background-size(cover);
+	@include pie-clearfix;
+	img {
+		@include float-left;
+	} //end img
+	nav {
+		@include float-right;
+		@include transition(all, 0.3s);
+		font-family: $font-mont;
+		font-size: 1.4rem;
+		li {
+			display: inline-block;
+			margin: 0 20px;
+		} //end li
+		a {
+			color: $white;
+			text-decoration: none;
+			text-transform: uppercase;
+			&:hover {
+				color: $gold;
+			} //end hover
+		} //end a
+	} //end nav
+	p {
+		clear: both;
+		color: $white;
+		font-family: $font-droid;
+		font-size: 4rem;
+		font-style: italic;
+		padding: 215px 0 55px 0;
+	} //end p
+	h1 {
+		font: bold 7.2rem $font-mont;
+		color: $white;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+	a#tell-more {
+		@include border-radius(4px);
+		@include transition(all, 0.3s);
+		width: 240px;
+		display: inline-block;
+		font: bold 1.8rem $font-mont;
+		color: $white;
+		background: $gold;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 25px 0;
+		margin-bottom: 160px;
+		&:hover {
+			background: darken($gold, 5%);
+		} //end hover
+	} //end a#tell-more
+} //end #main-header
+
+#services {
+	width: 100%;
+	text-align: center;
+	padding: 120px 0;
+	h2 {
+		font: bold 4rem $font-mont;
+		text-transform: uppercase;
+		color: $lightblack;
+		margin-bottom: 20px;
+	} // end h2
+	p {
+		font: normal 1.6rem $font-droid;
+		font-style: italic;
+		color: $gray;
+		margin-bottom: 70px;
+	} // end p
+	li {
+		display: inline-block;
+		width: 28%;
+		&:nth-child(2) {
+			margin: 0 4%;
+		} //end li:nth-child(2)
+		img { 
+			width: 100%;
+			max-width: 70px; 
+			margin-bottom: 20px;
+		} //end img
+		h4 {
+			color: $lightblack;
+			font: bold 1.8rem $font-mont;
+			margin-bottom: 20px;
+		} //end h4
+		p {
+			font: normal 1.4rem $font-roboto;
+			line-height: 1.7;
+			margin: 0;
+			text-align: left;
+		} //end p
+	} //end li
+} //end #services
+
+#portfolio {
+	width: 100%;
+	text-align: center;
+	background: $lightgraybg;
+	padding: 115px 0 70px 0;
+	h2 {
+		font: bold 4rem $font-mont;
+		color: $lightblack;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	p {
+		font: normal 1.6rem $font-droid;
+		font-style: italic;
+		color: $gray;
+		margin-bottom: 75px;
+	}
+	li {
+		width: 30%;
+		display: inline-block;
+		background: $white;
+		margin-bottom: 50px;
+		cursor: pointer;
+		&:nth-of-type(3n+2) { margin: 0 2.5%; }
+		img {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			margin-bottom: 30px;
+		} //end img
+		h4 {
+			font: bold 1.8rem $font-mont;
+			color: $lighterblack;
+		} //end h4
+		p {
+			font-size: 1.4rem;
+			color: $lightgray;
+			margin-bottom: 30px;
+		}
+	} //end li
+} //end #portfolio
+#about-us {
+	width: 100%;
+	text-align: center;
+	padding: 120px 0 0 0;
+	h2 {
+		font: bold 4rem $font-mont;
+		color: $lightblack;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	p {
+		font: $font-droid;
+		font-size: 1.6rem;
+		font-style: italic;
+		color: $lightgray;
+		margin-bottom: 70px;
+	}
+}

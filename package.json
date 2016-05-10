@@ -1,0 +1,11 @@
+{
+	"name" : "golden_template",
+	"version" : "0.0.1",
+	"dependencies" : {
+	"grunt" : "latest",
+	"grunt-contrib-watch" : "1.0.0",
+	"grunt-contrib-compass" : "1.1.1",
+	"grunt-contrib-uglify" : "1.0.1",
+	"matchdep" : "1.0.1"
+	}
+}
