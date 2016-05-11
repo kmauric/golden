@@ -63,33 +63,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 7, ../scss/main.scss */
+/***** GLOBAL STYLES *****/
+/* line 8, ../scss/main.scss */
 *, *::before, *::after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 8, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 9, ../scss/main.scss */
+/* line 10, ../scss/main.scss */
 body {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
   background: #fff;
 }
 
-/* line 14, ../scss/main.scss */
+/* line 15, ../scss/main.scss */
 .container {
   max-width: 1200px;
   padding: 0 5%;
   margin: 0 auto;
 }
 
-/* line 20, ../scss/main.scss */
+/***** MAIN HEADER SECTION *****/
+/* line 22, ../scss/main.scss */
 #main-header {
   width: 100%;
   background: url("../img/header_bg.jpg") no-repeat center center;
@@ -107,11 +109,11 @@ body {
   display: table;
   clear: both;
 }
-/* line 27, ../scss/main.scss */
+/* line 29, ../scss/main.scss */
 #main-header img {
   float: left;
 }
-/* line 30, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 #main-header nav {
   float: right;
   -moz-transition: all, 0.3s;
@@ -121,22 +123,22 @@ body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
 }
-/* line 35, ../scss/main.scss */
+/* line 37, ../scss/main.scss */
 #main-header nav li {
   display: inline-block;
   margin: 0 20px;
 }
-/* line 39, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
 #main-header nav a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 43, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 #main-header nav a:hover {
   color: #fed136;
 }
-/* line 48, ../scss/main.scss */
+/* line 50, ../scss/main.scss */
 #main-header p {
   clear: both;
   color: #fff;
@@ -145,14 +147,14 @@ body {
   font-style: italic;
   padding: 215px 0 55px 0;
 }
-/* line 56, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 #main-header h1 {
   font: bold 7.2rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 60px;
 }
-/* line 62, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 #main-header a#tell-more {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -171,53 +173,54 @@ body {
   padding: 25px 0;
   margin-bottom: 160px;
 }
-/* line 74, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 #main-header a#tell-more:hover {
   background: #fecb1d;
 }
 
-/* line 80, ../scss/main.scss */
+/***** SERVICES SECTION *****/
+/* line 83, ../scss/main.scss */
 #services {
   width: 100%;
   text-align: center;
   padding: 120px 0;
 }
-/* line 84, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 #services h2 {
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #222;
   margin-bottom: 20px;
 }
-/* line 90, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 #services p {
   font: normal 1.6rem "Droid Serif", serif;
   font-style: italic;
   color: #777;
   margin-bottom: 70px;
 }
-/* line 96, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 #services li {
   display: inline-block;
   width: 28%;
 }
-/* line 99, ../scss/main.scss */
+/* line 102, ../scss/main.scss */
 #services li:nth-child(2) {
   margin: 0 4%;
 }
-/* line 102, ../scss/main.scss */
+/* line 105, ../scss/main.scss */
 #services li img {
   width: 100%;
   max-width: 70px;
   margin-bottom: 20px;
 }
-/* line 107, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 #services li h4 {
   color: #222;
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
-/* line 112, ../scss/main.scss */
+/* line 115, ../scss/main.scss */
 #services li p {
   font: normal 1.4rem "Roboto Slab", serif;
   line-height: 1.7;
@@ -225,28 +228,29 @@ body {
   text-align: left;
 }
 
-/* line 121, ../scss/main.scss */
+/***** PORTFOLIO SECTION *****/
+/* line 125, ../scss/main.scss */
 #portfolio {
   width: 100%;
   text-align: center;
   background: #f7f7f7;
   padding: 115px 0 70px 0;
 }
-/* line 126, ../scss/main.scss */
+/* line 130, ../scss/main.scss */
 #portfolio h2 {
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-/* line 132, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 #portfolio p {
   font: normal 1.6rem "Droid Serif", serif;
   font-style: italic;
   color: #777;
   margin-bottom: 75px;
 }
-/* line 138, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 #portfolio li {
   width: 30%;
   display: inline-block;
@@ -254,30 +258,31 @@ body {
   margin-bottom: 50px;
   cursor: pointer;
 }
-/* line 144, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 #portfolio li:nth-of-type(3n+2) {
   margin: 0 2.5%;
 }
-/* line 145, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 #portfolio li img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   margin-bottom: 30px;
 }
-/* line 151, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 #portfolio li h4 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #333;
 }
-/* line 155, ../scss/main.scss */
+/* line 159, ../scss/main.scss */
 #portfolio li p {
   font-size: 1.4rem;
   color: #737373;
   margin-bottom: 30px;
 }
 
-/* line 162, ../scss/main.scss */
+/***** ABOUT US SECTION *****/
+/* line 168, ../scss/main.scss */
 #about-us {
   overflow: hidden;
   *zoom: 1;
@@ -285,14 +290,14 @@ body {
   text-align: center;
   padding: 120px 0 30px 0;
 }
-/* line 167, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 #about-us h2 {
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* line 173, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 #about-us p {
   font: "Droid Serif", serif;
   font-size: 1.6rem;
@@ -301,7 +306,7 @@ body {
   padding-left: 30px;
   margin-bottom: 70px;
 }
-/* line 181, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 #about-us .memorable-events {
   *zoom: 1;
   width: 100%;
@@ -314,24 +319,24 @@ body {
   display: table;
   clear: both;
 }
-/* line 186, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 #about-us .memorable-events .text-wrapper {
   float: left;
   width: 40%;
   text-align: right;
   margin-right: 30px;
 }
-/* line 192, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 #about-us .memorable-events h3 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 196, ../scss/main.scss */
+/* line 203, ../scss/main.scss */
 #about-us .memorable-events h4 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
-/* line 200, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 #about-us .memorable-events p {
   font: normal 1.4rem "Roboto Slab", serif;
   color: #777;
@@ -339,14 +344,14 @@ body {
   padding-left: 70px;
   margin: 0;
 }
-/* line 207, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 #about-us .memorable-events .image-container {
   width: 50%;
   text-align: left;
   float: left;
   position: relative;
 }
-/* line 212, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 #about-us .memorable-events .image-container:after {
   height: 150px;
   content: "";
@@ -356,7 +361,7 @@ body {
   left: 17.5%;
   z-index: -1;
 }
-/* line 221, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 #about-us .memorable-events .image-container img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -366,7 +371,7 @@ body {
   border: 10px solid #f1f1f1;
   object-fit: cover;
 }
-/* line 229, ../scss/main.scss */
+/* line 236, ../scss/main.scss */
 #about-us .memorable-events #our-story {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -380,13 +385,13 @@ body {
   position: relative;
   left: 20px;
 }
-/* line 239, ../scss/main.scss */
+/* line 246, ../scss/main.scss */
 #about-us .memorable-events #our-story h3 {
   color: #fff;
   line-height: 1.4;
   padding: 48px 0 0 0;
 }
-/* line 247, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 #about-us .right-side {
   *zoom: 1;
   z-index: 1;
@@ -397,24 +402,24 @@ body {
   display: table;
   clear: both;
 }
-/* line 250, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 #about-us .right-side .text-wrapper {
   width: 35%;
   float: right;
   text-align: left;
   margin: 0 0 0 30px;
 }
-/* line 256, ../scss/main.scss */
+/* line 264, ../scss/main.scss */
 #about-us .right-side p {
   margin: 0;
   padding: 0;
 }
-/* line 260, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 #about-us .right-side .image-container {
   width: 60%;
   margin-left: 10px;
 }
-/* line 263, ../scss/main.scss */
+/* line 271, ../scss/main.scss */
 #about-us .right-side .image-container:after {
   height: 150px;
   content: "";
@@ -424,7 +429,9 @@ body {
   right: 15%;
   z-index: -1;
 }
-/* line 272, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 #about-us .right-side .image-container img {
   float: right;
 }
+
+/***** OUR AMAZING TEAM SECTION *****/

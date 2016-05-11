@@ -4,6 +4,7 @@
 @import 'mixins';
 @import 'breakpoint';
 
+/***** GLOBAL STYLES *****/
 *, *::before, *::after { @include box-sizing; }
 html { font-size: 62.5%; }
 body {
@@ -17,6 +18,7 @@ body {
 	margin: 0 auto;  
 } //end container
 
+/***** MAIN HEADER SECTION *****/
 #main-header {
 	width: 100%;
 	background: url("../img/header_bg.jpg") no-repeat center center;
@@ -77,6 +79,7 @@ body {
 	} //end a#tell-more
 } //end #main-header
 
+/***** SERVICES SECTION *****/
 #services {
 	width: 100%;
 	text-align: center;
@@ -118,6 +121,7 @@ body {
 	} //end li
 } //end #services
 
+/***** PORTFOLIO SECTION *****/
 #portfolio {
 	width: 100%;
 	text-align: center;
@@ -159,6 +163,8 @@ body {
 		}
 	} //end li
 } //end #portfolio
+
+/***** ABOUT US SECTION *****/
 #about-us {
 	@include clearfix;
 	width: 100%;
@@ -178,6 +184,7 @@ body {
 		padding-left: 30px;
 		margin-bottom: 70px;
 	} //end p
+	//for events positioned on the left side of the timeline
 	.memorable-events {
 		@include pie-clearfix;
 		width: 100%;
@@ -192,18 +199,18 @@ body {
 		h3 {
 			font: bold 1.8rem $font-mont;
 			text-transform: uppercase;
-		}
+		} //end h3
 		h4 {
 			font: bold 1.8rem $font-mont;
 			margin-bottom: 20px;
-		}
+		} //end h4
 		p {
 			font: normal 1.4rem $font-roboto;
 			color: $gray;
 			line-height: 1.6;
 			padding-left: 70px;
 			margin: 0;
-		}
+		} //end p
 		.image-container {
 			width: 50%;
 			text-align: left;
@@ -217,7 +224,7 @@ body {
 				top: 160px;
 				left: 17.5%;
 				z-index: -1;
-			}
+			} //end :after
 			img {
 			@include border-radius(50%);
 			width: 180px;
@@ -244,6 +251,7 @@ body {
 		} //end #our-story
 		
 	} //end .memorable-events
+	//for events positioned on the right side of the timeline
 	.right-side {
 		@include pie-clearfix;
 		z-index: 1;
@@ -252,11 +260,11 @@ body {
 			float: right;
 			text-align: left;
 			margin: 0 0 0 30px;
-		}
+		} //end .text-wrapper
 		p {
 			margin: 0;
 			padding: 0;
-		}
+		} //end p
 		.image-container {
 			width: 60%;
 			margin-left: 10px;
@@ -268,10 +276,11 @@ body {
 				top: 160px;
 				right: 15%;
 				z-index: -1;
-			}
+			} //end :after
 			img {
 				float: right;
-			}
-		}
+			} //end img
+		} //end .image-container
 	}//end right
 } //end #about-us
+/***** OUR AMAZING TEAM SECTION *****/
