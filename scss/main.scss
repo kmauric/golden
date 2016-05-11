@@ -163,7 +163,7 @@ body {
 	@include clearfix;
 	width: 100%;
 	text-align: center;
-	padding: 120px 0 0 0;
+	padding: 120px 0 30px 0;
 	h2 {
 		font: bold 4rem $font-mont;
 		color: $lightblack;
@@ -175,16 +175,18 @@ body {
 		font-size: 1.6rem;
 		font-style: italic;
 		color: $lightgray;
+		padding-left: 30px;
 		margin-bottom: 70px;
 	} //end p
 	.memorable-events {
 		@include pie-clearfix;
-		text-align: right;
+		width: 100%;
 		margin-bottom: 90px;
 		z-index: 1;
 		.text-wrapper {
 			@include float-left;
 			width: 40%;
+			text-align: right;
 			margin-right: 30px;
 		} //end .text-wrapper
 		h3 {
@@ -199,7 +201,7 @@ body {
 			font: normal 1.4rem $font-roboto;
 			color: $gray;
 			line-height: 1.6;
-			//padding-left: 35px;
+			padding-left: 70px;
 			margin: 0;
 		}
 		.image-container {
@@ -213,7 +215,7 @@ body {
 				border-right: 3px solid $image-border;
 				position: absolute;
 				top: 160px;
-				left: 17%;
+				left: 17.5%;
 				z-index: -1;
 			}
 			img {
@@ -223,7 +225,23 @@ body {
 			border: 10px solid $image-border;
 			object-fit: cover;
 			} //end img
-		}
+		} //end .image-container
+		#our-story {
+			@include border-radius(50%);
+			width: 180px;
+			height: 180px;
+			text-align: center;
+			background: $gold;
+			border: 10px solid $image-border;
+			margin: 0 auto;
+			position: relative;
+			left: 20px;
+			h3 {
+				color: $white;
+				line-height: 1.4;
+				padding: 48px 0 0 0;
+			}
+		} //end #our-story
 		
 	} //end .memorable-events
 	.right-side {
@@ -237,7 +255,7 @@ body {
 		}
 		p {
 			margin: 0;
-			padding-left: 0;
+			padding: 0;
 		}
 		.image-container {
 			width: 60%;
@@ -248,7 +266,7 @@ body {
 				border-right: 3px solid $image-border;
 				position: absolute;
 				top: 160px;
-				right: 14%;
+				right: 15%;
 				z-index: -1;
 			}
 			img {

@@ -283,7 +283,7 @@ body {
   *zoom: 1;
   width: 100%;
   text-align: center;
-  padding: 120px 0 0 0;
+  padding: 120px 0 30px 0;
 }
 /* line 167, ../scss/main.scss */
 #about-us h2 {
@@ -298,12 +298,13 @@ body {
   font-size: 1.6rem;
   font-style: italic;
   color: #737373;
+  padding-left: 30px;
   margin-bottom: 70px;
 }
-/* line 180, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 #about-us .memorable-events {
   *zoom: 1;
-  text-align: right;
+  width: 100%;
   margin-bottom: 90px;
   z-index: 1;
 }
@@ -313,47 +314,49 @@ body {
   display: table;
   clear: both;
 }
-/* line 185, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 #about-us .memorable-events .text-wrapper {
   float: left;
   width: 40%;
+  text-align: right;
   margin-right: 30px;
 }
-/* line 190, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 #about-us .memorable-events h3 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 194, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 #about-us .memorable-events h4 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
-/* line 198, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 #about-us .memorable-events p {
   font: normal 1.4rem "Roboto Slab", serif;
   color: #777;
   line-height: 1.6;
+  padding-left: 70px;
   margin: 0;
 }
-/* line 205, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 #about-us .memorable-events .image-container {
   width: 50%;
   text-align: left;
   float: left;
   position: relative;
 }
-/* line 210, ../scss/main.scss */
+/* line 212, ../scss/main.scss */
 #about-us .memorable-events .image-container:after {
   height: 150px;
   content: "";
   border-right: 3px solid #f1f1f1;
   position: absolute;
   top: 160px;
-  left: 17%;
+  left: 17.5%;
   z-index: -1;
 }
-/* line 219, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 #about-us .memorable-events .image-container img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -364,6 +367,26 @@ body {
   object-fit: cover;
 }
 /* line 229, ../scss/main.scss */
+#about-us .memorable-events #our-story {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  background: #fed136;
+  border: 10px solid #f1f1f1;
+  margin: 0 auto;
+  position: relative;
+  left: 20px;
+}
+/* line 239, ../scss/main.scss */
+#about-us .memorable-events #our-story h3 {
+  color: #fff;
+  line-height: 1.4;
+  padding: 48px 0 0 0;
+}
+/* line 247, ../scss/main.scss */
 #about-us .right-side {
   *zoom: 1;
   z-index: 1;
@@ -374,34 +397,34 @@ body {
   display: table;
   clear: both;
 }
-/* line 232, ../scss/main.scss */
+/* line 250, ../scss/main.scss */
 #about-us .right-side .text-wrapper {
   width: 35%;
   float: right;
   text-align: left;
   margin: 0 0 0 30px;
 }
-/* line 238, ../scss/main.scss */
+/* line 256, ../scss/main.scss */
 #about-us .right-side p {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
-/* line 242, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 #about-us .right-side .image-container {
   width: 60%;
   margin-left: 10px;
 }
-/* line 245, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 #about-us .right-side .image-container:after {
   height: 150px;
   content: "";
   border-right: 3px solid #f1f1f1;
   position: absolute;
   top: 160px;
-  right: 14%;
+  right: 15%;
   z-index: -1;
 }
-/* line 254, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 #about-us .right-side .image-container img {
   float: right;
 }
