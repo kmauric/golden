@@ -160,7 +160,7 @@ body {
 	} //end li
 } //end #portfolio
 #about-us {
-	@include pie-clearfix;
+	@include clearfix;
 	width: 100%;
 	text-align: center;
 	padding: 120px 0 0 0;
@@ -178,24 +178,14 @@ body {
 		margin-bottom: 70px;
 	} //end p
 	.memorable-events {
-		clear: both;
-		width: 70%;
+		@include pie-clearfix;
 		text-align: right;
 		margin-bottom: 90px;
-		position: relative;
-			&:after {
-				height: 88px;
-				content: "";
-				border-right: 3px solid $image-border;
-				position: absolute;
-				top: 182px;
-				right: 32%;
-				z-index: 0;
-			}
+		z-index: 1;
 		.text-wrapper {
 			@include float-left;
-			width: 50%;
-			margin-right: 40px;
+			width: 40%;
+			margin-right: 30px;
 		} //end .text-wrapper
 		h3 {
 			font: bold 1.8rem $font-mont;
@@ -209,17 +199,61 @@ body {
 			font: normal 1.4rem $font-roboto;
 			color: $gray;
 			line-height: 1.6;
-			padding-left: 35px;
+			//padding-left: 35px;
+			margin: 0;
 		}
-		img {
+		.image-container {
+			width: 50%;
+			text-align: left;
 			@include float-left;
+			position: relative;
+			&:after {
+				height: 150px;
+				content: "";
+				border-right: 3px solid $image-border;
+				position: absolute;
+				top: 160px;
+				left: 17%;
+				z-index: -1;
+			}
+			img {
 			@include border-radius(50%);
 			width: 180px;
 			height: 180px;
 			border: 10px solid $image-border;
 			object-fit: cover;
-			margin-top: 5px;
-			z-index: 1;
+			} //end img
 		}
-	}
-}
+		
+	} //end .memorable-events
+	.right-side {
+		@include pie-clearfix;
+		z-index: 1;
+		.text-wrapper {
+			width: 35%;
+			float: right;
+			text-align: left;
+			margin: 0 0 0 30px;
+		}
+		p {
+			margin: 0;
+			padding-left: 0;
+		}
+		.image-container {
+			width: 60%;
+			margin-left: 10px;
+			&:after {
+				height: 150px;
+				content: "";
+				border-right: 3px solid $image-border;
+				position: absolute;
+				top: 160px;
+				right: 14%;
+				z-index: -1;
+			}
+			img {
+				float: right;
+			}
+		}
+	}//end right
+} //end #about-us
