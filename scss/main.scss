@@ -283,4 +283,101 @@ body {
 		} //end .image-container
 	}//end right
 } //end #about-us
+
 /***** OUR AMAZING TEAM SECTION *****/
+#amazing-team {
+	@include pie-clearfix;
+	width: 100%;
+	text-align: center;
+	background: $darkgraybg;
+	padding: 115px 0;
+	h2 {
+		font: bold 4rem $font-mont;
+		color: $lightblack;
+		margin: 0 0 20ox 0;
+	} //end #amazing team h2
+	p {
+		font-family: $font-droid;
+		font-size: 1.6rem;
+		font-style: italic;
+		color: $gray;
+		margin-bottom: 80px;
+	} //end #amazing-team p
+	.team-profile {
+		width: 33%;
+		float: left;
+		margin: 0 0 50px 0;
+		.member-image {
+			@include border-radius(50%);
+			width: 215px;
+			height: 215px;
+			background: $black;
+			margin: 0 auto 20px auto;
+		} // end .member-image
+		h5 {
+			font: bold 1.6rem $font-mont;
+			color: $lightblack;
+			margin: 0 0 8px 0;
+		} //end .team-profile h5
+		p {
+			font: normal 1.4rem $font-roboto;
+			color: $gray;
+			margin: 0 0 10px 0;
+		} //end .team-profile p
+		li {
+			display: inline-block;
+			font-size: 1.6rem;
+			margin: 0 7px;
+		}
+		a {
+			@include transition(all, 0.3s);
+			display: inline-block;
+			text-indent: -9999px;
+			&:after {
+				display: block;
+				content: "";
+				width: 41px;
+				height: 41px;
+				vertical-align: middle;
+				background: transparent url("../img/social_icons.png") 0 0 no-repeat;
+			} //end a:after
+			&:hover {
+				&::after {
+					background: transparent url("../img/social_icons_hover.png") 0 0 no-repeat;
+				}
+			} //end hover
+		} //end a
+		a.facebook {
+			&:after {			
+				background-position: -42px 0;
+			} //end a.facebook:after
+			&:hover {
+				&::after {
+					background-position: -50px 0;	
+				}
+			} //end hover
+		} //end a.facebook
+		a.pinterest {
+			&:after {			
+				background-position: -85px 0;
+			} //end a.pinterest:after
+			&:hover {
+				&::after {
+					background-position: -100px 0;	
+				}
+			} //end hover
+		} //end a.pinterest
+		a.googleplus {
+			&:after {			
+				background-position: 100% 0;
+			} //end a.googleplus:after
+			
+		} //end a.googleplus
+	} //end .team-profile
+	p.team-message {
+		clear: both;
+		font: normal 1.6rem $font-roboto;
+		line-height: 1.6;
+		padding: 0 170px;
+	} //end .team-message
+} //end #amazing-team

@@ -435,3 +435,114 @@ body {
 }
 
 /***** OUR AMAZING TEAM SECTION *****/
+/* line 288, ../scss/main.scss */
+#amazing-team {
+  *zoom: 1;
+  width: 100%;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 115px 0;
+}
+/* line 38, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+#amazing-team:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 294, ../scss/main.scss */
+#amazing-team h2 {
+  font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
+  color: #222;
+  margin: 0 0 20ox 0;
+}
+/* line 299, ../scss/main.scss */
+#amazing-team p {
+  font-family: "Droid Serif", serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 80px;
+}
+/* line 306, ../scss/main.scss */
+#amazing-team .team-profile {
+  width: 33%;
+  float: left;
+  margin: 0 0 50px 0;
+}
+/* line 310, ../scss/main.scss */
+#amazing-team .team-profile .member-image {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 215px;
+  height: 215px;
+  background: #111;
+  margin: 0 auto 20px auto;
+}
+/* line 317, ../scss/main.scss */
+#amazing-team .team-profile h5 {
+  font: bold 1.6rem "Montserrat", Helvetica, Arial, sans-serif;
+  color: #222;
+  margin: 0 0 8px 0;
+}
+/* line 322, ../scss/main.scss */
+#amazing-team .team-profile p {
+  font: normal 1.4rem "Roboto Slab", serif;
+  color: #777;
+  margin: 0 0 10px 0;
+}
+/* line 327, ../scss/main.scss */
+#amazing-team .team-profile li {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0 7px;
+}
+/* line 332, ../scss/main.scss */
+#amazing-team .team-profile a {
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+  display: inline-block;
+  text-indent: -9999px;
+}
+/* line 336, ../scss/main.scss */
+#amazing-team .team-profile a:after {
+  display: block;
+  content: "";
+  width: 41px;
+  height: 41px;
+  vertical-align: middle;
+  background: transparent url("../img/social_icons.png") 0 0 no-repeat;
+}
+/* line 345, ../scss/main.scss */
+#amazing-team .team-profile a:hover::after {
+  background: transparent url("../img/social_icons_hover.png") 0 0 no-repeat;
+}
+/* line 351, ../scss/main.scss */
+#amazing-team .team-profile a.facebook:after {
+  background-position: -42px 0;
+}
+/* line 355, ../scss/main.scss */
+#amazing-team .team-profile a.facebook:hover::after {
+  background-position: -50px 0;
+}
+/* line 361, ../scss/main.scss */
+#amazing-team .team-profile a.pinterest:after {
+  background-position: -85px 0;
+}
+/* line 365, ../scss/main.scss */
+#amazing-team .team-profile a.pinterest:hover::after {
+  background-position: -100px 0;
+}
+/* line 371, ../scss/main.scss */
+#amazing-team .team-profile a.googleplus:after {
+  background-position: 100% 0;
+}
+/* line 377, ../scss/main.scss */
+#amazing-team p.team-message {
+  clear: both;
+  font: normal 1.6rem "Roboto Slab", serif;
+  line-height: 1.6;
+  padding: 0 170px;
+}
