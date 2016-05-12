@@ -294,7 +294,7 @@ body {
 	h2 {
 		font: bold 4rem $font-mont;
 		color: $lightblack;
-		margin: 0 0 20ox 0;
+		margin: 0 0 20px 0;
 	} //end #amazing team h2
 	p {
 		font-family: $font-droid;
@@ -379,5 +379,6 @@ body {
 		font: normal 1.6rem $font-roboto;
 		line-height: 1.6;
 		padding: 0 170px;
+		margin: 0;
 	} //end .team-message
 } //end #amazing-team

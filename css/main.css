@@ -453,7 +453,7 @@ body {
 #amazing-team h2 {
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
-  margin: 0 0 20ox 0;
+  margin: 0 0 20px 0;
 }
 /* line 299, ../scss/main.scss */
 #amazing-team p {
@@ -545,4 +545,5 @@ body {
   font: normal 1.6rem "Roboto Slab", serif;
   line-height: 1.6;
   padding: 0 170px;
+  margin: 0;
 }
