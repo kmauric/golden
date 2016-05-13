@@ -493,7 +493,61 @@ body {
 				background: darken($gold, 5%);
 				border-bottom: 4px solid darken($gold, 20%);
 				text-decoration: underline;
-			}
-		}
-	}
+			} //end hover
+		} //end button#send-message
+	}// end .form-container
 } //end #contact-us
+
+/***** FOOTER SECTION *****/
+footer {
+	width: 100%;
+	text-align: left;
+	padding: 25px 0;
+	p {
+		display: inline-block;
+		font: normal 1.4rem $font-mont;
+		color: $darkgray;
+		margin: 0 115px 0 0;
+	} //end p
+	ul {
+		display: inline-block;
+	}
+	li {
+		display: inline-block;
+		margin: 0 5px;
+	} //end li
+	a {
+		@include transition(all, 0.3s);
+		display: inline-block;
+		text-indent: -9999px;
+		margin: -25px 0 0 0;
+		vertical-align: top;
+		&::after {
+			display: block;
+			content: "";
+			width: 41px;
+			height: 40px;
+			background: transparent url("../img/footer_social_icons.png") 0 0 no-repeat;
+		} //end a::after
+		&:hover {
+			&::after {
+				background: transparent url("../img/footer_social_icons_hover.png") 0 0 no-repeat;	
+			}
+		} //end a:hover
+	} //end a
+	a.footer-facebook {
+		&::after {
+			background-position: -51px 0;
+		}
+	} //end a.footer-facebook
+	a.footer-pinterest {
+		&::after {
+			background-position: -101px 0;
+		}
+	}//end a.footer-pinterest
+	a.footer-google {
+		&::after {
+			background-position: 100% 0;
+		}
+	}//end a.footer-google
+} //end footer

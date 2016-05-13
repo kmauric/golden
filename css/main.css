@@ -686,3 +686,62 @@ body {
   border-bottom: 4px solid #cd9f01;
   text-decoration: underline;
 }
+
+/***** FOOTER SECTION *****/
+/* line 502, ../scss/main.scss */
+footer {
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
+}
+/* line 506, ../scss/main.scss */
+footer p {
+  display: inline-block;
+  font: normal 1.4rem "Montserrat", Helvetica, Arial, sans-serif;
+  color: #555;
+  margin: 0 115px 0 0;
+}
+/* line 512, ../scss/main.scss */
+footer ul {
+  display: inline-block;
+}
+/* line 515, ../scss/main.scss */
+footer li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 519, ../scss/main.scss */
+footer a {
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+  display: inline-block;
+  text-indent: -9999px;
+  margin: -25px 0 0 0;
+  vertical-align: top;
+}
+/* line 525, ../scss/main.scss */
+footer a::after {
+  display: block;
+  content: "";
+  width: 41px;
+  height: 40px;
+  background: transparent url("../img/footer_social_icons.png") 0 0 no-repeat;
+}
+/* line 533, ../scss/main.scss */
+footer a:hover::after {
+  background: transparent url("../img/footer_social_icons_hover.png") 0 0 no-repeat;
+}
+/* line 539, ../scss/main.scss */
+footer a.footer-facebook::after {
+  background-position: -51px 0;
+}
+/* line 544, ../scss/main.scss */
+footer a.footer-pinterest::after {
+  background-position: -101px 0;
+}
+/* line 549, ../scss/main.scss */
+footer a.footer-google::after {
+  background-position: 100% 0;
+}
