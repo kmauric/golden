@@ -13,6 +13,7 @@ body {
 	background: $white;
 }
 .container { 
+	width: 100%;
 	max-width: 1200px;
 	padding: 0 5%;
 	margin: 0 auto;  
@@ -32,8 +33,7 @@ body {
 	nav {
 		@include float-right;
 		@include transition(all, 0.3s);
-		font-family: $font-mont;
-		font-size: 1.4rem;
+		font: normal 1.4rem $font-mont;
 		li {
 			display: inline-block;
 			margin: 0 20px;
@@ -46,6 +46,9 @@ body {
 				color: $gold;
 			} //end hover
 		} //end a
+		a.active {
+			color: $gold;
+		}
 	} //end nav
 	p {
 		clear: both;
@@ -73,6 +76,9 @@ body {
 		text-decoration: none;
 		padding: 25px 0;
 		margin-bottom: 160px;
+		&:visited {
+			@extend a#tell-more;
+		}
 		&:hover {
 			background: darken($gold, 5%);
 		} //end hover
