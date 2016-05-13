@@ -267,18 +267,29 @@ body {
   margin: 0 2.5%;
 }
 /* line 155, ../scss/main.scss */
+#portfolio li a {
+  -moz-transition: background, 0.3s;
+  -o-transition: background, 0.3s;
+  -webkit-transition: background, 0.3s;
+  transition: background, 0.3s;
+  display: block;
+  background: #111;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+/* line 163, ../scss/main.scss */
 #portfolio li img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  margin-bottom: 30px;
 }
-/* line 161, ../scss/main.scss */
+/* line 168, ../scss/main.scss */
 #portfolio li h4 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #333;
 }
-/* line 165, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 #portfolio li p {
   font-size: 1.4rem;
   color: #737373;
@@ -286,7 +297,7 @@ body {
 }
 
 /***** ABOUT US SECTION *****/
-/* line 174, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 #about-us {
   overflow: hidden;
   *zoom: 1;
@@ -295,7 +306,7 @@ body {
   padding: 120px 0 30px 0;
   position: relative;
 }
-/* line 180, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 #about-us::before {
   height: 950px;
   content: "";
@@ -305,14 +316,14 @@ body {
   left: 51%;
   z-index: -1;
 }
-/* line 189, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 #about-us h2 {
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* line 195, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 #about-us p {
   font: "Droid Serif", serif;
   font-size: 1.6rem;
@@ -321,7 +332,7 @@ body {
   padding-left: 30px;
   margin-bottom: 70px;
 }
-/* line 204, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 #about-us .memorable-events {
   *zoom: 1;
   width: 100%;
@@ -334,24 +345,24 @@ body {
   display: table;
   clear: both;
 }
-/* line 209, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 #about-us .memorable-events .text-wrapper {
   float: left;
   width: 40%;
   text-align: right;
   margin-right: 30px;
 }
-/* line 215, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 #about-us .memorable-events h3 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 219, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 #about-us .memorable-events h4 {
   font: bold 1.8rem "Montserrat", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
-/* line 223, ../scss/main.scss */
+/* line 230, ../scss/main.scss */
 #about-us .memorable-events p {
   font: normal 1.4rem "Roboto Slab", serif;
   color: #777;
@@ -359,13 +370,13 @@ body {
   padding-left: 70px;
   margin: 0;
 }
-/* line 230, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 #about-us .memorable-events .image-container {
   width: 50%;
   text-align: left;
   float: left;
 }
-/* line 234, ../scss/main.scss */
+/* line 241, ../scss/main.scss */
 #about-us .memorable-events .image-container img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -375,7 +386,7 @@ body {
   border: 10px solid #f1f1f1;
   object-fit: cover;
 }
-/* line 242, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 #about-us .memorable-events #our-story {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -389,13 +400,13 @@ body {
   position: relative;
   left: 20px;
 }
-/* line 252, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 #about-us .memorable-events #our-story h3 {
   color: #fff;
   line-height: 1.4;
   padding: 48px 0 0 0;
 }
-/* line 261, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 #about-us .right-side {
   *zoom: 1;
   z-index: 1;
@@ -406,30 +417,30 @@ body {
   display: table;
   clear: both;
 }
-/* line 264, ../scss/main.scss */
+/* line 271, ../scss/main.scss */
 #about-us .right-side .text-wrapper {
   width: 35%;
   float: right;
   text-align: left;
   margin: 0 0 0 30px;
 }
-/* line 270, ../scss/main.scss */
+/* line 277, ../scss/main.scss */
 #about-us .right-side p {
   margin: 0;
   padding: 0;
 }
-/* line 274, ../scss/main.scss */
+/* line 281, ../scss/main.scss */
 #about-us .right-side .image-container {
   width: 60%;
   margin-left: 10px;
 }
-/* line 277, ../scss/main.scss */
+/* line 284, ../scss/main.scss */
 #about-us .right-side .image-container img {
   float: right;
 }
 
 /***** OUR AMAZING TEAM SECTION *****/
-/* line 285, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
 #amazing-team {
   *zoom: 1;
   width: 100%;
@@ -443,13 +454,13 @@ body {
   display: table;
   clear: both;
 }
-/* line 291, ../scss/main.scss */
+/* line 298, ../scss/main.scss */
 #amazing-team h2 {
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
   margin: 0 0 20px 0;
 }
-/* line 296, ../scss/main.scss */
+/* line 303, ../scss/main.scss */
 #amazing-team p {
   font-family: "Droid Serif", serif;
   font-size: 1.6rem;
@@ -457,13 +468,13 @@ body {
   color: #777;
   margin-bottom: 80px;
 }
-/* line 303, ../scss/main.scss */
+/* line 310, ../scss/main.scss */
 #amazing-team .team-profile {
   width: 33%;
   float: left;
   margin: 0 0 50px 0;
 }
-/* line 307, ../scss/main.scss */
+/* line 314, ../scss/main.scss */
 #amazing-team .team-profile .member-image {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -473,25 +484,25 @@ body {
   background: #111;
   margin: 0 auto 20px auto;
 }
-/* line 314, ../scss/main.scss */
+/* line 321, ../scss/main.scss */
 #amazing-team .team-profile h5 {
   font: bold 1.6rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
   margin: 0 0 8px 0;
 }
-/* line 319, ../scss/main.scss */
+/* line 326, ../scss/main.scss */
 #amazing-team .team-profile p {
   font: normal 1.4rem "Roboto Slab", serif;
   color: #777;
   margin: 0 0 10px 0;
 }
-/* line 324, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 #amazing-team .team-profile li {
   display: inline-block;
   font-size: 1.6rem;
   margin: 0 7px;
 }
-/* line 329, ../scss/main.scss */
+/* line 336, ../scss/main.scss */
 #amazing-team .team-profile a {
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
@@ -500,7 +511,7 @@ body {
   display: inline-block;
   text-indent: -9999px;
 }
-/* line 333, ../scss/main.scss */
+/* line 340, ../scss/main.scss */
 #amazing-team .team-profile a:after {
   display: block;
   content: "";
@@ -509,31 +520,31 @@ body {
   vertical-align: middle;
   background: transparent url("../img/social_icons.png") 0 0 no-repeat;
 }
-/* line 342, ../scss/main.scss */
+/* line 349, ../scss/main.scss */
 #amazing-team .team-profile a:hover::after {
   background: transparent url("../img/social_icons_hover.png") 0 0 no-repeat;
 }
-/* line 348, ../scss/main.scss */
+/* line 355, ../scss/main.scss */
 #amazing-team .team-profile a.facebook:after {
   background-position: -42px 0;
 }
-/* line 352, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 #amazing-team .team-profile a.facebook:hover::after {
   background-position: -50px 0;
 }
-/* line 358, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
 #amazing-team .team-profile a.pinterest:after {
   background-position: -85px 0;
 }
-/* line 362, ../scss/main.scss */
+/* line 369, ../scss/main.scss */
 #amazing-team .team-profile a.pinterest:hover::after {
   background-position: -100px 0;
 }
-/* line 368, ../scss/main.scss */
+/* line 375, ../scss/main.scss */
 #amazing-team .team-profile a.googleplus:after {
   background-position: 100% 0;
 }
-/* line 374, ../scss/main.scss */
+/* line 381, ../scss/main.scss */
 #amazing-team p.team-message {
   clear: both;
   font: normal 1.6rem "Roboto Slab", serif;
@@ -543,25 +554,25 @@ body {
 }
 
 /***** CLIENTS SECTION *****/
-/* line 384, ../scss/main.scss */
+/* line 391, ../scss/main.scss */
 #company-clients {
   width: 100%;
   text-align: center;
   padding: 65px 0;
 }
-/* line 388, ../scss/main.scss */
+/* line 395, ../scss/main.scss */
 #company-clients li {
   display: inline-block;
   margin: 0 25px;
 }
-/* line 392, ../scss/main.scss */
+/* line 399, ../scss/main.scss */
 #company-clients a {
   display: inline-block;
   text-decoration: none;
   text-indent: -9999px;
   font-size: 1.6rem;
 }
-/* line 397, ../scss/main.scss */
+/* line 404, ../scss/main.scss */
 #company-clients a::after {
   display: block;
   content: "";
@@ -569,38 +580,38 @@ body {
   height: 43px;
   background: transparent url("../img/brand_logo.png") 0 0 no-repeat;
 }
-/* line 406, ../scss/main.scss */
+/* line 413, ../scss/main.scss */
 #company-clients a.wordpress::after {
   width: 188px;
   background-position: -170px 0;
 }
-/* line 412, ../scss/main.scss */
+/* line 419, ../scss/main.scss */
 #company-clients a.aetuts::after {
   width: 132px;
   background-position: -368px 0;
 }
-/* line 418, ../scss/main.scss */
+/* line 425, ../scss/main.scss */
 #company-clients a.microlancer::after {
   width: 167px;
   background-position: 100% 0;
 }
 
 /***** CONTACT US SECTION *****/
-/* line 426, ../scss/main.scss */
+/* line 433, ../scss/main.scss */
 #contact-us {
   width: 100%;
   text-align: center;
   background: #222 url("../img/contact_us_bg.png") 100% 130px no-repeat;
   padding: 105px 0 115px 0;
 }
-/* line 431, ../scss/main.scss */
+/* line 438, ../scss/main.scss */
 #contact-us h2 {
   color: #fff;
   font: bold 4rem "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* line 437, ../scss/main.scss */
+/* line 444, ../scss/main.scss */
 #contact-us p {
   font: "Droid Serif", serif;
   font-size: 1.6rem;
@@ -608,12 +619,12 @@ body {
   color: #777;
   margin-bottom: 70px;
 }
-/* line 444, ../scss/main.scss */
+/* line 451, ../scss/main.scss */
 #contact-us .form-container {
   width: 100%;
   padding: 0 5%;
 }
-/* line 447, ../scss/main.scss */
+/* line 454, ../scss/main.scss */
 #contact-us .form-container form {
   *zoom: 1;
 }
@@ -623,21 +634,21 @@ body {
   display: table;
   clear: both;
 }
-/* line 450, ../scss/main.scss */
+/* line 457, ../scss/main.scss */
 #contact-us .form-container .inputs, #contact-us .form-container .textarea {
   width: 48%;
   float: left;
   margin: 0 2% 30px 0;
 }
-/* line 454, ../scss/main.scss */
+/* line 461, ../scss/main.scss */
 #contact-us .form-container .inputs p, #contact-us .form-container .textarea p {
   margin: 0 0 25px 0;
 }
-/* line 456, ../scss/main.scss */
+/* line 463, ../scss/main.scss */
 #contact-us .form-container .inputs p:nth-child(3), #contact-us .form-container .textarea p:nth-child(3) {
   margin-bottom: 0;
 }
-/* line 460, ../scss/main.scss */
+/* line 467, ../scss/main.scss */
 #contact-us .form-container .inputs input[type="text"], #contact-us .form-container .textarea input[type="text"], #contact-us .form-container .inputs input[type="email"], #contact-us .form-container .textarea input[type="email"] {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -649,11 +660,11 @@ body {
   border: 1px solid #777;
   padding: 15px 20px;
 }
-/* line 473, ../scss/main.scss */
+/* line 480, ../scss/main.scss */
 #contact-us .form-container .textarea {
   margin: 0 0 30px 2%;
 }
-/* line 476, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 #contact-us .form-container .textarea textarea {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -666,7 +677,7 @@ body {
   text-transform: uppercase;
   padding: 15px 20px;
 }
-/* line 487, ../scss/main.scss */
+/* line 494, ../scss/main.scss */
 #contact-us .form-container button#send-message {
   -moz-transition: background, 0.3s;
   -o-transition: background, 0.3s;
@@ -684,7 +695,7 @@ body {
   padding: 24px 40px;
   cursor: pointer;
 }
-/* line 498, ../scss/main.scss */
+/* line 505, ../scss/main.scss */
 #contact-us .form-container button#send-message:hover {
   background: #fecb1d;
   border-bottom: 4px solid #cd9f01;
@@ -692,29 +703,29 @@ body {
 }
 
 /***** FOOTER SECTION *****/
-/* line 508, ../scss/main.scss */
+/* line 515, ../scss/main.scss */
 footer {
   width: 100%;
   text-align: left;
   padding: 25px 0;
 }
-/* line 512, ../scss/main.scss */
+/* line 519, ../scss/main.scss */
 footer p {
   display: inline-block;
   font: normal 1.4rem "Montserrat", Helvetica, Arial, sans-serif;
   color: #555;
   margin: 0 115px 0 0;
 }
-/* line 518, ../scss/main.scss */
+/* line 525, ../scss/main.scss */
 footer ul {
   display: inline-block;
 }
-/* line 521, ../scss/main.scss */
+/* line 528, ../scss/main.scss */
 footer li {
   display: inline-block;
   margin: 0 5px;
 }
-/* line 525, ../scss/main.scss */
+/* line 532, ../scss/main.scss */
 footer a {
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
@@ -725,7 +736,7 @@ footer a {
   margin: -25px 0 0 0;
   vertical-align: top;
 }
-/* line 531, ../scss/main.scss */
+/* line 538, ../scss/main.scss */
 footer a::after {
   display: block;
   content: "";
@@ -733,19 +744,19 @@ footer a::after {
   height: 40px;
   background: transparent url("../img/footer_social_icons.png") 0 0 no-repeat;
 }
-/* line 539, ../scss/main.scss */
+/* line 546, ../scss/main.scss */
 footer a:hover::after {
   background: transparent url("../img/footer_social_icons_hover.png") 0 0 no-repeat;
 }
-/* line 545, ../scss/main.scss */
+/* line 552, ../scss/main.scss */
 footer a.footer-facebook::after {
   background-position: -51px 0;
 }
-/* line 550, ../scss/main.scss */
+/* line 557, ../scss/main.scss */
 footer a.footer-pinterest::after {
   background-position: -101px 0;
 }
-/* line 555, ../scss/main.scss */
+/* line 562, ../scss/main.scss */
 footer a.footer-google::after {
   background-position: 100% 0;
 }

@@ -9,7 +9,17 @@ $(".main-nav").find("a").each(function(){
 	}, 1500);
 	});
 }); //end smooth scroll
-	
+
+// Hover effect of images on the #portfolio section
+$(".portfolio-items").find("li").each(function(){
+	$(this).find("img")
+		.mouseover(function() {
+			$(this).fadeTo(500, 0.5);
+		})
+		.mouseout(function() {
+			$(this).fadeTo(500, 1);
+		});
+}); //end #portfolio image hover
 	
 	
 }); //end jQuery function
