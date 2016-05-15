@@ -326,6 +326,9 @@ body {
 			float: right;
 			text-align: left;
 			margin: 0 0 0 30px;
+			@include breakpoint($desktop) {
+				margin-left: 0;
+			}
 		} //end .text-wrapper
 		p {
 			margin: 0;
@@ -334,6 +337,9 @@ body {
 		.image-container {
 			width: 60%;
 			margin-left: 10px;
+			@include breakpoint($desktop) {
+				margin-left: 2px;
+			}
 			img {
 				float: right;
 			} //end img
@@ -617,3 +623,4 @@ footer {
 		}
 	}//end a.footer-google
 } //end footer
+
