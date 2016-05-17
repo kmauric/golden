@@ -16,11 +16,22 @@ $(function() {
 		$(this).find("img")
 			.mouseover(function() {
 				$(this).fadeTo(500, 0.5);
+				$(this).parent().parent().addClass("bottomline");
 			})
 			.mouseout(function() {
 				$(this).fadeTo(500, 1);
+			$(this).parent().parent().removeClass("bottomline");
 			});
 	}); //end #portfolio image hover
+	
+	$(".portfolio-items").find("li").each(function(){ 
+		$(this).mouseover(function(){
+			$(this).addClass("bottomline");
+		})
+		.mouseout(function() {
+			$(this).removeClass("bottomline");
+		});
+	});
 
 	$(".portfolio-items img").on("click", function(e) {
 		e.preventDefault();
