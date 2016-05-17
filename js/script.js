@@ -1,5 +1,9 @@
 $(function() {
-
+	
+	//PARALLAX SCROLL
+	$.stellar();
+	
+	//MAIN-NAVIGATION SMOOTH SCROLL ON SECTIONS
 	//Smooth Scroll to sections from main-navigation menu
 	$(".main-nav").find("a").each(function(){
 		var aLoc = $(this).attr("href");

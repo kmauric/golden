@@ -18,7 +18,7 @@ body {
 	padding: 0 5%;
 	margin: 0 auto;  
 } //end container
-
+section { background-attachment: fixed;}
 /***** MAIN HEADER SECTION *****/
 #main-header {
 	@include transition(all, 0.3s);
@@ -27,19 +27,18 @@ body {
 	text-align: center;
 	padding: 40px 0 0 0;
 	@include background-size(cover);
-	@include pie-clearfix;
-	img {
-		@include float-left;
-	} //end img
 	nav {
-		@include float-right;
 		@include transition(all, 0.3s);
 		font: normal 1.4rem $font-mont;
 		li {
 			display: inline-block;
 			margin: 0 20px;
+			&:first-child {
+				margin-right: 320px;
+			} //end first-child
 		} //end li
 		a {
+			display: inline-block;
 			color: $white;
 			text-decoration: none;
 			text-transform: uppercase;
@@ -49,7 +48,18 @@ body {
 		} //end a
 		a.active {
 			color: $gold;
-		}
+		} //end a.active
+		a#logo {
+			text-indent: -9999px;
+			&::after {
+				display: block;
+				content: "";
+				width: 79px;
+				height: 28px;
+				background: url(../img/golden_logo.png) center center no-repeat;
+				margin: -25px 0 0 0;
+			} //end &::after
+		} //end a#logo
 	} //end nav
 	p {
 		clear: both;
@@ -588,6 +598,7 @@ body {
 				}
 			}
 			input[type="text"] {
+				@include transition(all, 0.3s, ease);
 				@include border-radius(4px);
 				width: 100%;
 				font: bold 1.4rem $font-mont;
