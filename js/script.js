@@ -22,6 +22,22 @@ $(function() {
 		$(this).addClass("active");
 	});
 	
+	//STICKY NAV
+
+	var stickyNavTop = $("#main-header .nav").offset().top;
+	var stickyNav = function() {
+		var scrollTop = $(window).scrollTop();
+		if(scrollTop > stickyNavTop) {
+			$("#main-header .nav").addClass("navbar-wrapper");
+		} else { 
+			$("#main-header .nav").removeClass("navbar-wrapper"); 
+		}
+	};
+	
+	$(window).scroll(function(){
+		stickyNav();
+	});
+	
 	// PORTFOLIO SECTION
 	// Hover effect of images on the #portfolio section
 	$(".portfolio-items").find("li").each(function(){

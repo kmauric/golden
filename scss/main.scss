@@ -28,6 +28,7 @@ section { background-attachment: fixed;}
 	padding: 40px 0 0 0;
 	@include background-size(cover);
 	.navbar-wrapper {
+		@include transition(all, 0.3s);
 		width: 100%;
 		height: 60px;
 		background: rgba(0,0,0,0.9);
@@ -362,15 +363,16 @@ section { background-attachment: fixed;}
 			width: 50%;
 			text-align: left;
 			@include float-left;
+			@include background-clip(padding-box);
 			@include breakpoint($desktop-small){
 				width: 50%;
 			}
 			img {
-			@include border-radius(50%);
-			width: 180px;
-			height: 180px;
-			border: 10px solid $image-border;
-			object-fit: cover;
+				@include background-clip(padding-box);
+				@include border-radius(50%);
+				width: 180px;
+				height: 180px;
+				border: 10px solid $image-border;
 			} //end img
 		} //end .image-container
 		#our-story {
