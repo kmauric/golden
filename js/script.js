@@ -3,7 +3,9 @@ $(function() {
 	//PARALLAX SCROLL
 	$.stellar();
 	
-	//MAIN-NAVIGATION SMOOTH SCROLL ON SECTIONS
+	//MAIN-HEADER SECTION
+	
+	//MAIN-NAVIGATION SMOOTH SCROLL TO SECTIONS
 	//Smooth Scroll to sections from main-navigation menu
 	$(".main-nav").find("a").each(function(){
 		var aLoc = $(this).attr("href");
@@ -13,7 +15,13 @@ $(function() {
 		}, 1500);
 		});
 	}); //end smooth scroll
-
+	
+	//NAVIGATION ACTIVE CLASS ON CLICK
+	$(".main-nav a").click(function() {
+		$(".main-nav a.active").removeClass("active");
+		$(this).addClass("active");
+	});
+	
 	// PORTFOLIO SECTION
 	// Hover effect of images on the #portfolio section
 	$(".portfolio-items").find("li").each(function(){
