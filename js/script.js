@@ -1,8 +1,4 @@
 $(function() {
-	
-	//PARALLAX SCROLL
-	$.stellar();
-	
 	//MAIN-HEADER SECTION
 	
 	//MAIN-NAVIGATION SMOOTH SCROLL TO SECTIONS
@@ -105,5 +101,83 @@ $(function() {
 			this.placeholder = $(this).attr("data-placeholder");
 		});
 	}); //end textarea placeholder
+	
+	
+	// SCROLLING
+	
+	//PARALLAX SCROLL
+	$.stellar();
+	
+	//ANIMATE ELEMENTS ON VIEW
+	var $window = $(window);
+	var $main_header_p = $("#main-header p"),
+		$main_header_h1 = $("#main-header h1"),
+		$portfolio_h2 = $("#portfolio h2");
+	
+	function scrolly(){
+		var window_height = $window.height(),
+			window_top_position = $window.scrollTop(),
+			window_bottom_position = (window_top_position + window_height);
+		$.each($main_header_p, function(){
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_top_position + element_height);
+
+			//check to see if this current container is within viewport
+			if ((element_bottom_position >= window_top_position) &&
+				(element_top_position <= window_bottom_position)) {
+			  $element.addClass('animated fadeIn');
+			} else {
+			  $element.removeClass('animated fadeIn');
+			}
+		}); //end $.each
+		$.each($main_header_h1, function(){
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_top_position + element_height);
+
+			//check to see if this current container is within viewport
+			if ((element_bottom_position >= window_top_position) &&
+				(element_top_position <= window_bottom_position)) {
+			  $element.addClass('animated pulse');
+			} else {
+			  $element.removeClass('animated pulse');
+			}
+		}); //end $.each
+		$.each($main_header_p, function(){
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_top_position + element_height);
+
+			//check to see if this current container is within viewport
+			if ((element_bottom_position >= window_top_position) &&
+				(element_top_position <= window_bottom_position)) {
+			  $element.addClass('animated fadeIn');
+			} else {
+			  $element.removeClass('animated fadeIn');
+			}
+		}); //end $.each
+		$.each($portfolio_h2, function(){
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_top_position + element_height);
+
+			//check to see if this current container is within viewport
+			if ((element_bottom_position >= window_top_position) &&
+				(element_top_position <= window_bottom_position)) {
+			  $element.addClass('animated zoomIn');
+			} else {
+			  $element.removeClass('animated zoomIn');
+			}
+		}); //end $.each
+	} //end scrolly
+	
+	$window.on("scroll resize", scrolly);
+	$window.trigger("scroll");
+	
 	
 }); //end jQuery function
